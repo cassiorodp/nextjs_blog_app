@@ -2,20 +2,13 @@ import { useState, useEffect } from 'react';
 
 import classes from './contact-form.module.css';
 import Notification from '../ui/notification';
+import axios from 'axios';
 
 async function sendContactData(contactDetails) {
-  const response = await fetch('/api/contact', {
-    method: 'POST',
-    body: JSON.stringify(contactDetails),
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(data.message || 'Something went wrong!');
+  try {
+    await axios.post('/api/contact', contactDetails);
+  } catch (error) {
+    throw new Error(error.response.data.message || 'Something went wrong!');
   }
 }
 
@@ -39,8 +32,6 @@ function ContactForm() {
 
   async function sendMessageHandler(event) {
     event.preventDefault();
-
-    // optional: add client-side validation
 
     setRequestStatus('pending');
 
@@ -92,20 +83,20 @@ function ContactForm() {
       <form className={classes.form} onSubmit={sendMessageHandler}>
         <div className={classes.controls}>
           <div className={classes.control}>
-            <label htmlFor='email'>Your Email</label>
+            <label htmlFor="email">Your Email</label>
             <input
-              type='email'
-              id='email'
+              type="email"
+              id="email"
               required
               value={enteredEmail}
               onChange={(event) => setEnteredEmail(event.target.value)}
             />
           </div>
           <div className={classes.control}>
-            <label htmlFor='name'>Your Name</label>
+            <label htmlFor="name">Your Name</label>
             <input
-              type='text'
-              id='name'
+              type="text"
+              id="name"
               required
               value={enteredName}
               onChange={(event) => setEnteredName(event.target.value)}
@@ -113,10 +104,10 @@ function ContactForm() {
           </div>
         </div>
         <div className={classes.control}>
-          <label htmlFor='message'>Your Message</label>
+          <label htmlFor="message">Your Message</label>
           <textarea
-            id='message'
-            rows='5'
+            id="message"
+            rows="5"
             required
             value={enteredMessage}
             onChange={(event) => setEnteredMessage(event.target.value)}

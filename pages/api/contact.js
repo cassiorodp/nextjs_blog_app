@@ -1,4 +1,4 @@
-import { MongoClient } from 'mongodb';
+import MongoClient from 'mongodb/lib/mongo_client';
 
 async function handler(req, res) {
   if (req.method === 'POST') {
