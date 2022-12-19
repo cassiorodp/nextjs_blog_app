@@ -27,7 +27,9 @@ async function handler(req, res) {
     const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.0cnvf.mongodb.net/${process.env.mongodb_dbname}?retryWrites=true&w=majority`;
 
     try {
-      client = await MongoClient.connect(connectionString);
+      client = await MongoClient.connect(connectionString, {
+        useUnifiedTopology: true,
+      });
     } catch (error) {
       res.status(500).json({ message: 'Could not connect to database.' });
       return;
