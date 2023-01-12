@@ -1,34 +1,137 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
 
-## Getting Started
+  <h2 align="center">Nextjs Blog App</h2>
 
-First, run the development server:
+  <p align="center">
+    A complete nextjs app!
+    <br />
+    <a href="https://nextjs-blog-app-livid.vercel.app/" target="_blank">Source</a>
+    ·
+    <a href="https://github.com/cassiorodp/nextjs_blog_app/issues" target="_blank">Report Bug</a>
+  </p>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="public/images/landing_page.png" alt="landingpage project"/>
+</p>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<details open="open">
+  <summary><h2">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about">About</a>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#techs">Techs</a></li>
+      </ul>
+    </li>
+    <li>
+      <span>Running the App</span>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contribution">Contribution</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+  </ol>
+</details>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<h2 id="about">⚡ About</h2> 
+<p align="center">
+Nextjs Blog app is an app that emulate a functional blog using all next js features!
+</p>
 
-## Learn More
+<h3 id="features">⚙ Features</h3>
 
-To learn more about Next.js, take a look at the following resources:
+- API Routing
+- Server Side Rendering
+- Server Side data fetching with mongoDB connection
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h3 id="techs">💻 Techs</h3>
+  
+<div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" alt="nextjs" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="mongodb" width="40" height="40"/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+</div>
 
-## Deploy on Vercel
+<h3>👨‍💻 Running the App</h3>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To execute the app, please follow this instructions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h3 id="prerequisites">Prerequisites</h3>
+
+You need to have these tools: NPM & Git.
+Besides, if you want to contribuite later, it's good to have some code editor like vsCode
+
+<h3 id="installation">Installation</h3>
+
+1. Clone the repository (HTTPS or SSH)
+
+   ```sh
+   git clone git@github.com:cassiorodp/nextjs_blog_app.git
+   ```
+
+   ```sh
+   git@github.com:cassiorodp/nextjs_blog_app.git
+   ```
+
+2. Enter the app's folder and install the dependencies
+
+   ```sh
+   cd nextjs_blog_app
+   npm install
+   ```
+
+   or
+
+   ```sh
+   cd nextjs_blog_app
+   yarn
+   ```
+
+3. Run the app
+
+   ```
+    npm run dev
+   ```
+
+   or
+
+   ```
+   yarn dev
+   ```
+
+<h2 id="contribution">🏗 Contribution</h2>
+
+Feel free to add any contribution on our app! Here is some instructions:
+
+1. Fork
+2. Create your feature/fix branch (`git checkout -b feature/fix`)
+3. Commit your alterations (`git commit -m 'Improving your app!'`)
+4. Push to remote repository (`git push origin feature/fix`)
+5. Open a PR(Pull Request)
+
+---
+
+<h2 id="contacts">📫 Contacts</h2>
+    
+<h3>This project was done by the developer:</h3>
+<ul>
+    <li>
+      <a href="https://github.com/cassiorodp" target="_blank">
+        <img src="https://img.shields.io/badge/-Cassio_Pereira-black?style=flat&logo=Github&logoColor=white">
+      </a>
+    </li>
+</ul>
+
+---
+
+We are open for feedbacks.
